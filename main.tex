@@ -1,0 +1,86 @@
+\documentclass[11pt, a4paper, sans]{moderncv}
+
+\moderncvstyle{classic}
+
+\moderncvcolor{blue}
+
+\usepackage[scale=0.72]{geometry}
+
+\firstname{Aswin}
+\lastname{Kalarickal}
+\address{Kalarickal House, Chowara PO}{Ernakulam, Kerala}{India - 683 571}
+\phone[mobile]{+91~88~91~423590}
+\phone[fixed]{+91~(484)~2600542}
+\email{mail@aswink.in}
+\homepage{www.aswink.in}
+
+\nopagenumbers
+\AtEndPreamble{%
+	\AtBeginDocument{%
+		\newlength{\pagenumberwidth}%
+		\settowidth{\pagenumberwidth}{\color{color2}\addressfont\itshape\thepage}%
+		\fancypagestyle{plain}{%
+			\fancyfoot[r]{\parbox[b]{\pagenumberwidth}{\color{color2}\pagenumberfont\thepage}}}
+		\pagestyle{plain}}}
+
+
+\begin{document}
+
+\makecvtitle
+
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+
+\section{Technical Skills}
+\cvcomputer{Coding / Architecture}{Python, Node.js, Web Backend (PHP, webapp2, Express),\newline Datastores (MySQL, MongoDB, Redis),\newline Web Frontend (Javascript, AngularJS, jQuery, AJAX, HTML5, CSS3),\newline Game Engine (Unity - C\# and Javascript), CMS (Wordpress, Ghost),\newline Mobile Development (Phonegap, Sencha), Scripting (Bash)}
+\cvcomputer{Deployment}{Nginx, Cloud Servers (AWS)}
+\cvcomputer{Repositories}{Mercurial, Git}
+
+\section{Experience}
+\cventry{2014--Present}{Software Engineer}{DYNAMICNEXT}{Kochi}{India}{DYNAMICNEXT founded in 2012 is a company involved in making social strategic games. Its titles include Downtown Mafia, which has more than a million users.\newline{}%
+Projects I have worked on:%
+\begin{itemize}%
+\item Downtown Casino:
+  \begin{itemize}%
+  \item Development and design of core functionalities of the game
+  \end{itemize}
+\item Downtown Mafia:
+  \begin{itemize}%
+  \item Implementation of additional functionalities in the game
+  \end{itemize}
+\end{itemize}}
+\cventry{2013--2014}{COO \& Co-founder}{Coppra}{Kochi}{India}{Coppra was founded in 2013. It has developed many websites and web applications for various clients including Startup Village, KSEB, etc. Coppra was the first to launch a Malayalam movie promotion game (for Android). It has also done title game for a renowned local animation series. I was in core team in charge of products and services provided by the company and a leading developer.\newline{}%
+Projects I have worked on:%
+\begin{itemize}%
+\item Different websites including that of Startup Village's official website
+\item Backend of games developed by the company
+\end{itemize}}
+
+\section{Education}
+\cventry{2013}{B.Tech in Computer Science and Engineering}{MES College of Engineering}{Kuttippuram}{\textit{6.89}}{}  % arguments 3 to 6 can be left empty
+\cventry{2009}{AISSCE}{S N Vidya Bhavan}{Chentrappinni}{\textit{82.6\%}}{}
+\cventry{2007}{AISSE}{S N Vidya Bhavan}{Chentrappinni}{\textit{83.2\%}}{}
+
+\section{Academic Projects}
+\subsection{Main Project}
+\cvitem{Title}{\emph{Intelligent Traffic Lights Based on RFID}}
+\cvitem{Description}{The project was to implement a dynamic traffic signaling system based on Radio Frequency Identification (RFID). The RFID readers located at the intersections of roads detect RFID tags fixed in every vehicle. By this, one can determine the count of vehicles in the waiting queue of each lane and thus dynamically compute the time for which the lane is signaled green. The system also allows assigning priority to vehicles and also tracing vehicles in cases of theft or traffic rule violation.}
+\subsection{Mini Project}
+\cvitem{Title}{\emph{Single Sign-On}}
+\cvitem{Description}{The project was to implement single sign on for managing multiple personal accounts of users. This is a website where one can save his login credentials for different sites, and later login to each of them without the need to re-enter the login details.}
+
+\section{Languages}
+\cvlanguage{Malayalam}{Native}{}
+\cvlanguage{English}{Full professional proficiency}{}
+\cvlanguage{Hindi}{Professional working proficiency}{}
+
+\section{Interests}
+\cvline{}{Music}
+\cvline{}{Photography}
+\cvline{}{Tech Magazines}
+
+\section{Activities}
+\cvlistitem{Official web designer of Stupa'13 -- a national level inter-college techno-cultural event held at MES College of Engineering, Kuttippuram}
+\cvlistitem{As Secretary of departmental association MatriCS (MES Association for Technical Research in Computer Science) organized various events at college}
+\cvlistitem{Was a house captain at school and had participated in various events at both district and state level}
+	
+\end{document}
