@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.2)  5 AUG 2016 11:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.2)  19 JUL 2017 14:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -915,15 +915,15 @@ ABD: EveryShipout initializing macros
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(83.65074pt, 430.20639pt, 83.65074pt)
-* v-part:(T,H,B)=(94.64484pt, 608.43475pt, 141.96725pt)
+* h-part:(L,W,R)=(74.68848pt, 448.1309pt, 74.68849pt)
+* v-part:(T,H,B)=(84.50467pt, 633.78513pt, 126.75705pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=430.20639pt
-* \textheight=608.43475pt
-* \oddsidemargin=11.38075pt
-* \evensidemargin=11.38075pt
-* \topmargin=-14.62515pt
+* \textwidth=448.1309pt
+* \textheight=633.78513pt
+* \oddsidemargin=2.41849pt
+* \evensidemargin=2.41849pt
+* \topmargin=-24.76532pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -1011,25 +1011,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 33.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 61.
 [1
 
 {/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CC6215BE3DDB05D54180DC1E5A7693BB;939.
  ) 
 Here is how much of TeX's memory you used:
- 26858 strings out of 494501
- 500901 string characters out of 6167030
- 563324 words of memory out of 5000000
+ 26854 strings out of 494501
+ 500849 string characters out of 6167030
+ 563314 words of memory out of 5000000
  29714 multiletter control sequences out of 15000+600000
- 67389 words of font info for 75 fonts, out of 8000000 for 9000
+ 67187 words of font info for 73 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  69i,13n,58p,10356b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/l
@@ -1039,7 +1039,7 @@ ve/2015basic/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/20
 15basic/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015b
 asic/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2015basic
 /texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
-Output written on main.pdf (2 pages, 134844 bytes).
+Output written on main.pdf (2 pages, 134872 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
