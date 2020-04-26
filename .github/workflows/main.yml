@@ -19,6 +19,6 @@ jobs:
     - name: Archive PDF
       uses: actions/upload-artifact@master
       with:
-        name: main.pdf
+        name: Aswin_Resume.pdf
         path: main.pdf
   
