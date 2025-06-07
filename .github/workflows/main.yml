@@ -19,10 +19,10 @@ jobs:
       - name: Compile PDF
         run: |
           pdflatex main.tex
-          pdflatex main.tex  # Run twice for references
+          pdflatex main.tex  # Run twice for proper rendering
 
-      - name: Upload PDF
-        uses: actions/upload-artifact@v3
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
         with:
           name: Aswin_Resume
           path: main.pdf
