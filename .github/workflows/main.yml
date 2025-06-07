@@ -2,23 +2,27 @@ name: Build LaTeX document
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-  latex-job:
+  build:
     runs-on: ubuntu-latest
-    name: A job to Compile Latex file
+
     steps:
-    - uses: actions/checkout@v1
-    - name: Compilation
-      uses: tiulpin/tectonic-action@master
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tex_path: 'main.tex'
-    - name: Archive PDF
-      uses: actions/upload-artifact@master
-      with:
-        name: Aswin_Resume.pdf
-        path: main.pdf
-  
+      - uses: actions/checkout@v3
+
+      - name: Install full TeX Live
+        run: |
+          sudo apt update
+          sudo apt install -y texlive-full
+
+      - name: Compile PDF
+        run: |
+          pdflatex main.tex
+          pdflatex main.tex  # Run twice for references
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v3
+        with:
+          name: Aswin_Resume
+          path: main.pdf
