@@ -4,6 +4,9 @@ on:
   push:
     branches: [master]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,3 +29,16 @@ jobs:
         with:
           name: Aswin_Resume
           path: main.pdf
+
+      - name: Rename PDF for release
+        run: cp main.pdf Aswin_Resume.pdf
+
+      - name: Publish latest release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest --cleanup-tag --yes || true
+          gh release create latest Aswin_Resume.pdf \
+            --title "Latest Resume" \
+            --notes "Automatically published from the latest commit on master (${{ github.sha }})." \
+            --target ${{ github.sha }}
