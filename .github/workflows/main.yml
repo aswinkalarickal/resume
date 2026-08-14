@@ -26,7 +26,7 @@ jobs:
             latex latex-bin latex-fonts latexmk
             l3kernel l3packages l3backend
             graphics graphics-cfg graphics-def tools url etoolbox
-            moderncv fontawesome5 geometry fancyhdr xcolor colortbl
+            moderncv fontawesome5 fontawesome6 geometry fancyhdr xcolor colortbl
             arydshln multirow microtype pgf hyperref
             cm cm-super ec fontname kpathsea mptopdf
             atbegshi atveryend bigintcalc bitset epstopdf-pkg
