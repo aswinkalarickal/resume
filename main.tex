@@ -1,8 +1,14 @@
 \documentclass[11pt, a4paper, sans]{moderncv}
 
+% \moderncvcolor must precede \moderncvstyle: the style snapshots the palette
+% with \colorlet, so setting the color afterwards leaves the accents black.
+\moderncvcolor{blue}
+
 \moderncvstyle{classic}
 
-\moderncvcolor{blue}
+% moderncv 2.4.1's classic style greys the name; restore the previous black.
+\colorlet{firstnamecolor}{color0}
+\colorlet{lastnamecolor}{color0}
 
 \usepackage[scale=0.75]{geometry}
 

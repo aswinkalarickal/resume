@@ -12,12 +12,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
+      # Install only the packages main.tex actually loads, rather than pulling a
+      # full TeX Live distribution. The install is cached in the Actions cache.
+      # The TeX Live version is pinned: moderncv's appearance changes between
+      # releases, so an unpinned toolchain silently restyles the resume.
+      - name: Install TeX Live
+        uses: zauguin/install-texlive@v4.4.0
+        with:
+          texlive_version: 2026
+          packages: >-
+            latex latex-bin latex-fonts latexmk
+            l3kernel l3packages l3backend
+            graphics graphics-cfg graphics-def tools url etoolbox
+            moderncv fontawesome5 geometry fancyhdr xcolor colortbl
+            arydshln multirow microtype pgf hyperref
+            cm cm-super ec fontname kpathsea mptopdf
+            atbegshi atveryend bigintcalc bitset epstopdf-pkg
+            gettitlestring hycolor iftex infwarerr intcalc
+            kvdefinekeys kvoptions kvsetkeys latexconfig ltxcmds
+            pdfescape pdftexcmds refcount rerunfilecheck
+            stringenc uniquecounter
 
       - name: Compile PDF
-        uses: dante-ev/latex-action@2026-A
-        with:
-          root_file: main.tex
+        run: latexmk -pdf -file-line-error -interaction=nonstopmode main.tex
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
