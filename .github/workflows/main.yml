@@ -14,15 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install full TeX Live
-        run: |
-          sudo apt update
-          sudo apt install -y texlive-full
-
       - name: Compile PDF
-        run: |
-          pdflatex main.tex
-          pdflatex main.tex  # Run twice for proper rendering
+        uses: dante-ev/latex-action@v2
+        with:
+          root_file: main.tex
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
